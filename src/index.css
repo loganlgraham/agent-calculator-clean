@@ -13,3 +13,19 @@ input[type="text"]{width:100%;padding:12px 14px;border-radius:14px;border:1px so
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 h1{margin:0 0 6px 0}
 .footer{margin-top:16px;color:#3f5b4c}
+
+:root{
+  --brand:#2f855a;
+  --brand-2:#2d6a4f;
+  --ring:#7cc39c;
+}
+input[type="text"]:focus{
+  outline:none;
+  border-color:var(--ring);
+  box-shadow:0 0 0 3px rgba(124,195,156,0.35);
+  background:#ffffff;
+}
+.card h3{margin:0 0 6px 0}
+.row .kvpill .kicker{font-weight:600}
+.kvpill{background:#eaf6ef}
+label.row input[type="checkbox"]{transform:scale(1.1)}

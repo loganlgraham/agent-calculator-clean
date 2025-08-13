@@ -65,7 +65,7 @@ export default function App(){
 
               <div className="row" style={{justifyContent:'space-between'}}>
                 <label>Seller Credits</label>
-                <label className="row"><input type="checkbox" checked={autoSeller} onChange={e=>setAutoSeller(e.target.checked)} /> Auto-calc Seller Credits to zero Agent</label>
+                <label className="row" style={{gap:8}}><input type="checkbox" checked={autoSeller} onChange={e=>setAutoSeller(e.target.checked)} /> Auto-calc Seller Credits to zero Agent <span className="kvpill"><span className="kicker">Needed:</span><span className="value">{Number(Math.max(0, Number(data.additionalCreditsToZeroAgent||0))).toLocaleString(undefined,{style:"currency",currency:"USD"})}</span></span></label>
               </div>
               <input type="text" inputMode="numeric"
                 value={sellerCreditsValue ?? sellerCreditsInput}
